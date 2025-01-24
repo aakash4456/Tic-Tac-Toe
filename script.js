@@ -122,6 +122,11 @@ function checkWinstate() {
     blocks[0].classList.add('childs_afterWin');
     blocks[1].classList.add('childs_afterWin')
     blocks[2].classList.add('childs_afterWin')
+
+    childA.forEach((child) => {
+      child.style.pointerEvents = "none";
+    });
+
     displayMessage(`${blocks[0].innerHTML}, You won this round.`);
     if (blocks[0].innerHTML === "❌") {
       score_X.value++;
@@ -146,6 +151,11 @@ function checkWinstate() {
     blocks[3].classList.add('childs_afterWin');
     blocks[4].classList.add('childs_afterWin')
     blocks[5].classList.add('childs_afterWin')
+
+    childA.forEach((child) => {
+      child.style.pointerEvents = "none";
+    });
+
     displayMessage(`${blocks[3].innerHTML}, You won this round.`);
     if (blocks[3].innerHTML === "❌") {
       score_X.value++;
@@ -170,6 +180,11 @@ function checkWinstate() {
     blocks[6].classList.add('childs_afterWin');
     blocks[7].classList.add('childs_afterWin')
     blocks[8].classList.add('childs_afterWin')
+
+    childA.forEach((child) => {
+      child.style.pointerEvents = "none";
+    });
+
     displayMessage(`${blocks[6].innerHTML}, You won this round.`);
     if (blocks[6].innerHTML === "❌") {
       score_X.value++;
@@ -194,6 +209,11 @@ function checkWinstate() {
     blocks[0].classList.add('childs_afterWin');
     blocks[3].classList.add('childs_afterWin')
     blocks[6].classList.add('childs_afterWin')
+
+    childA.forEach((child) => {
+      child.style.pointerEvents = "none";
+    });
+
     displayMessage(`${blocks[0].innerHTML}, You won this round.`);
     if (blocks[0].innerHTML === "❌") {
       score_X.value++;
@@ -218,6 +238,11 @@ function checkWinstate() {
     blocks[1].classList.add('childs_afterWin')
     blocks[4].classList.add('childs_afterWin');
     blocks[7].classList.add('childs_afterWin')
+
+    childA.forEach((child) => {
+      child.style.pointerEvents = "none";
+    });
+
     displayMessage(`${blocks[1].innerHTML}, You won this round.`);
     if (blocks[1].innerHTML === "❌") {
       score_X.value++;
@@ -242,6 +267,11 @@ function checkWinstate() {
     blocks[2].classList.add('childs_afterWin');
     blocks[5].classList.add('childs_afterWin')
     blocks[8].classList.add('childs_afterWin')
+
+    childA.forEach((child) => {
+      child.style.pointerEvents = "none";
+    });
+
     displayMessage(`${blocks[2].innerHTML}, You won this round.`);
     if (blocks[2].innerHTML === "❌") {
       score_X.value++;
@@ -266,6 +296,11 @@ function checkWinstate() {
     blocks[0].classList.add('childs_afterWin');
     blocks[4].classList.add('childs_afterWin')
     blocks[8].classList.add('childs_afterWin')
+
+    childA.forEach((child) => {
+      child.style.pointerEvents = "none";
+    });
+
     displayMessage(`${blocks[0].innerHTML}, You won this round.`);
     if (blocks[0].innerHTML === "❌") {
       score_X.value++;
@@ -290,6 +325,11 @@ function checkWinstate() {
     blocks[2].classList.add('childs_afterWin');
     blocks[4].classList.add('childs_afterWin')
     blocks[6].classList.add('childs_afterWin')
+
+    childA.forEach((child) => {
+      child.style.pointerEvents = "none";
+    });
+
     displayMessage(`${blocks[2].innerHTML}, You won this round.`);
     if (blocks[2].innerHTML === "❌") {
       score_X.value++;
