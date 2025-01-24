@@ -26,6 +26,9 @@ let NextBtn = document.getElementById("NextBtn");
 let finalResultHead = document.getElementById("finalResultHead");
 let popUpNewGame = document.getElementById("popUpNewGame");
 
+let grid = document.querySelector(".grid");
+
+
 //variables
 let playgame = true;
 
@@ -45,7 +48,7 @@ function startGame() {
     blocks.push(element);
   });
   selectSlots();
-  let grid = document.querySelector(".grid");
+  // let grid = document.querySelector(".grid");
   grid.addEventListener("click", checkWinstate);
 }
 
@@ -88,6 +91,7 @@ NextBtn.addEventListener("click", function (e) {
     child.innerHTML = " ";
     child.classList.remove('childs_afterWin');
   });
+  grid.addEventListener("click", checkWinstate);
   if (RemainingChance.value === "0") {
     endgame();
   }
@@ -126,6 +130,7 @@ function checkWinstate() {
     childA.forEach((child) => {
       child.style.pointerEvents = "none";
     });
+    grid.removeEventListener("click", checkWinstate);
 
     displayMessage(`${blocks[0].innerHTML}, You won this round.`);
     if (blocks[0].innerHTML === "❌") {
@@ -151,10 +156,11 @@ function checkWinstate() {
     blocks[3].classList.add('childs_afterWin');
     blocks[4].classList.add('childs_afterWin')
     blocks[5].classList.add('childs_afterWin')
-
+    
     childA.forEach((child) => {
       child.style.pointerEvents = "none";
     });
+    grid.removeEventListener("click", checkWinstate);
 
     displayMessage(`${blocks[3].innerHTML}, You won this round.`);
     if (blocks[3].innerHTML === "❌") {
@@ -184,6 +190,7 @@ function checkWinstate() {
     childA.forEach((child) => {
       child.style.pointerEvents = "none";
     });
+    grid.removeEventListener("click", checkWinstate);
 
     displayMessage(`${blocks[6].innerHTML}, You won this round.`);
     if (blocks[6].innerHTML === "❌") {
@@ -213,6 +220,7 @@ function checkWinstate() {
     childA.forEach((child) => {
       child.style.pointerEvents = "none";
     });
+    grid.removeEventListener("click", checkWinstate);
 
     displayMessage(`${blocks[0].innerHTML}, You won this round.`);
     if (blocks[0].innerHTML === "❌") {
@@ -242,6 +250,7 @@ function checkWinstate() {
     childA.forEach((child) => {
       child.style.pointerEvents = "none";
     });
+    grid.removeEventListener("click", checkWinstate);
 
     displayMessage(`${blocks[1].innerHTML}, You won this round.`);
     if (blocks[1].innerHTML === "❌") {
@@ -271,6 +280,7 @@ function checkWinstate() {
     childA.forEach((child) => {
       child.style.pointerEvents = "none";
     });
+    grid.removeEventListener("click", checkWinstate);
 
     displayMessage(`${blocks[2].innerHTML}, You won this round.`);
     if (blocks[2].innerHTML === "❌") {
@@ -300,6 +310,7 @@ function checkWinstate() {
     childA.forEach((child) => {
       child.style.pointerEvents = "none";
     });
+    grid.removeEventListener("click", checkWinstate);
 
     displayMessage(`${blocks[0].innerHTML}, You won this round.`);
     if (blocks[0].innerHTML === "❌") {
@@ -329,6 +340,7 @@ function checkWinstate() {
     childA.forEach((child) => {
       child.style.pointerEvents = "none";
     });
+    grid.removeEventListener("click", checkWinstate);
 
     displayMessage(`${blocks[2].innerHTML}, You won this round.`);
     if (blocks[2].innerHTML === "❌") {
