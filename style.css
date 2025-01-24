@@ -1,5 +1,3 @@
-/* <!-- THIS IS TEST TIC TAC TOE --> */
-
 * {
     margin: 0;
     padding: 0;
@@ -13,15 +11,12 @@ html {
 }
 
 body {
-    background-image: linear-gradient(45DEG,#ffffea, #eaebd8);
     /* border: 2px solid blue; */
+    background-image: linear-gradient(45DEG,#ffffea, #eaebd8);
     display: table-cell;
     vertical-align: top;
 }
 
-/* html{
-    border: 2px solid brown;
-} */
 
 .header{
     padding: 40px;
@@ -39,7 +34,7 @@ body {
     text-shadow: 2px 2px 0px #ff0000, 5px 5px 12px black;
 }
 
-/* &&&&&&&&&&&&&&&&&&Done&&&&&&&&&&&&&&&&&&&&&&&& */
+/* &&&&&&&&&&&&&&&&&& Header Done &&&&&&&&&&&&&&&&&&&&&&&& */
 
 .superDiv{
     /* border: 2px solid red; */
@@ -52,7 +47,7 @@ body {
     width: 100%;
 }
 
-/* &&&&&&&&&&&&&&&&& left div &&&&&&&&&&&&&&&&& */
+/* &&&&&&&&&&&&&&&&&& Left div &&&&&&&&&&&&&&&&&& */
 
 .leftDiv{
     /* border: 2px solid black; */
@@ -103,7 +98,7 @@ body {
 }
 
 
-/* &&&&&&&&&&&&&&&&& right div &&&&&&&&&&&&&&&&& */
+/* &&&&&&&&&&&&&&&&&& Right Div &&&&&&&&&&&&&&&&&& */
 .rightDiv{
     /* border: 2px solid black; */
     padding: 1rem;
@@ -155,7 +150,7 @@ body {
 /* ****************************************************CSS FOR POP - UPs **************************************************** */
 
 
-/* Welcome to Tic Tac Toe pop up */
+/* &&&&&&&&&&&&&&&&&& Welcome to Tic Tac Toe pop up &&&&&&&&&&&&&&&&&& */
 .startDivPopUp{
     font-family: 'Bradley Hand', cursive;
     border: 2px solid black;
@@ -223,11 +218,10 @@ body {
     font-size: large;
     padding: 5px;
 }
-/* *************end************** */
+/* ************************* end ************************* */
 
 
-
-/* ***************next round pop up************ */
+/* &&&&&&&&&&&&&&&&&& Next Round Pop Up &&&&&&&&&&&&&&&&&& */
 .popUpNextRnd{
     font-family: 'Bradley Hand', cursive;
     border: 2px solid black;
@@ -276,9 +270,9 @@ body {
     box-shadow: 5px 5px 30px black;
     transition: 250ms linear; 
 }
-/* ****************end********************* */
+/* ************************* end ************************* */
 
-/* %%%%%%%%%%% start new game pop up ******************/
+/* &&&&&&&&&&&&&&&&&& Start New Game Pop Up &&&&&&&&&&&&&&&&&& */
 .popUpNewGame{
     font-family: 'Bradley Hand', cursive;
     border: 2px solid black;
@@ -313,7 +307,7 @@ body {
 #finalResultHead{
     font-size: 220%;
 }
-/* *************end************************* */
+/* ************************* end ************************* */
 
 
 

@@ -1,5 +1,3 @@
-// <!-- THIS IS TEST TIC TAC TOE -->
-
 // elements from startDivPopUp
 let startDivPopUp = document.getElementById("startDivPopUp");
 let select_slot = document.getElementById("select_slot");
@@ -381,11 +379,6 @@ function newGame() {
   });
 }
 
-// quitButton.addEventListener('click', function(e){
-//     startGame();
-// })
-
-
 
 gsap.from("#haed1", {
   opacity: 0,
@@ -395,45 +388,25 @@ gsap.from("#haed1", {
 
 gsap.from(".startDivPopUp", {
   opacity: 0,
-  delay: 0.5,             // Delay animation by 0.5 seconds
-
+  delay: 0.5,
   duration: 1.5,
   ease: "power1.inOut",
 });
 
-// gsap.from(".popUpNextRnd", {
-//   opacity: 0,
-//   delay: 0.5,             // Delay animation by 0.5 seconds
 
-//   duration: 1.5,
-//   ease: "power1.inOut",
+// for testing
+// gsap.from("#ha1", {
+//     opacity: 0,             // Start with 0 opacity (hidden)
+//     y: 50,                  // Start 50px below
+//     duration: 1,            // Animation duration of 1 second
+//     ease: "power1.inOut",   // Easing function for smooth transition
+//     delay: 0.5,             // Delay animation by 0.5 seconds
+//     stagger: 0.2,           // Stagger effect for multiple elements
+//     rotation: 180,          // Rotate the element 180 degrees
+//     scale: 0.5,             // Start with 50% scale (smaller)
+//     backgroundColor: "#f39c12", // Animate background color to #f39c12
+//     x: 100,                 // Start 100px from the left
+//     onComplete: function() {  // Callback function when the animation is complete
+//         console.log("Animation Complete!");
+//     }
 // });
-
-// gsap.from(".popUpNewGame", {
-//   opacity: 0,
-//   delay: 0.5,             // Delay animation by 0.5 seconds
-
-//   duration: 1.5,
-//   ease: "power1.inOut",
-// });
-
-
-
-
-
-
-gsap.from("#ha1", {
-    opacity: 0,             // Start with 0 opacity (hidden)
-    y: 50,                  // Start 50px below
-    duration: 1,            // Animation duration of 1 second
-    ease: "power1.inOut",   // Easing function for smooth transition
-    delay: 0.5,             // Delay animation by 0.5 seconds
-    stagger: 0.2,           // Stagger effect for multiple elements
-    rotation: 180,          // Rotate the element 180 degrees
-    scale: 0.5,             // Start with 50% scale (smaller)
-    backgroundColor: "#f39c12", // Animate background color to #f39c12
-    x: 100,                 // Start 100px from the left
-    onComplete: function() {  // Callback function when the animation is complete
-        console.log("Animation Complete!");
-    }
-});

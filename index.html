@@ -10,7 +10,6 @@
 <body>
     <div class="startDivPopUp" id="startDivPopUp">
         <h1>Welcome to Tic Tac Toe</h1>
-        
         <div class="div-box">
             <form action="" class="startDiv_content">
                 <label for="select_slot"><b>Select the No. of Slots.</b></label>
@@ -43,7 +42,6 @@
     </header>
     
     <div class="superDiv">
-        
         <div class="leftDiv">
             <div class="forcss">
                 <label for="curPlayer" class="infoAreaInput" id="curPlayerLabel">Current Player :</label>
@@ -65,13 +63,10 @@
                 <label for="score_O" class="infoAreaInput" id="score_O_Label">Score of O : </label>
                 <input type="text" class="infoAreaInput" id="score_O" value="0">
             </div>
-
-            
         </div>
         
         <div class="rightDiv">
-            <!-- <div class="parent"> -->
-                <div class="grid">
+            <div class="grid">
                     <div class="childs" id="mydiv1" onclick="setCurrentPlayer(this)"> </div>
                     <div class="childs" id="mydiv2" onclick="setCurrentPlayer(this)"> </div>
                     <div class="childs" id="mydiv3" onclick="setCurrentPlayer(this)"> </div>
@@ -82,14 +77,8 @@
                     <div class="childs" id="mydiv8" onclick="setCurrentPlayer(this)"> </div>
                     <div class="childs" id="mydiv9" onclick="setCurrentPlayer(this)"> </div>
                 </div>
-            <!-- </div> -->
         </div>
-        
     </div>
-    
-    <!-- <div class="result">
-        <button id="quitButton">Quit</button>
-    </div> -->
     
     <div class="popUpNextRnd" id="popUpNextRnd">
         <h2 class="slotResult"></h2>
@@ -100,6 +89,7 @@
         <h2 id="finalResultHead"></h2>
         <input type="button" value="Start New Match" id="NewBtn">
     </div>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="script.js"></script>
 </body>
