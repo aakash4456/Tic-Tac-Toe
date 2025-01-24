@@ -1,0 +1,320 @@
+/* <!-- THIS IS TEST TIC TAC TOE --> */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    display: table;
+    width: 100%;
+}
+
+body {
+    background-image: linear-gradient(45DEG,#ffffea, #eaebd8);
+    /* border: 2px solid blue; */
+    display: table-cell;
+    vertical-align: top;
+}
+
+/* html{
+    border: 2px solid brown;
+} */
+
+.header{
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#haed1{
+    /* border: 2px solid black; */
+    font-size: 300%;
+    font-family: 'Bradley Hand', cursive;
+    color: #13274F;
+    text-shadow: 2px 2px 0px #ff0000, 5px 5px 12px black;
+}
+
+/* &&&&&&&&&&&&&&&&&&Done&&&&&&&&&&&&&&&&&&&&&&&& */
+
+.superDiv{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 80vh;
+    padding-top: 34px;
+    width: 100%;
+}
+
+/* &&&&&&&&&&&&&&&&& left div &&&&&&&&&&&&&&&&& */
+
+.leftDiv{
+    /* border: 2px solid black; */
+    padding: 1rem;
+    background-color: bisque;
+    box-shadow:  2px 2px 20px grey, -2px -2px 20px grey;
+    border-radius: 30px;
+    min-height: 40vh;
+    min-width: 23vw;
+
+    position: relative;
+    top: -50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    padding-left: 15px;
+}
+
+.leftDiv:hover, .grid:hover{
+    box-shadow:  2px 2px 20px #65354b;
+    transition: 250ms linear;
+}
+
+.forcss{
+    font-size: 150%;
+    font-family: 'Bradley Hand', cursive;
+    font-weight: 900;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+#TotalChance, #curPlayer, #RemainingChance, #score_X, #score_O{
+    width: 80px;
+    border: 2px solid black;
+    border-radius: 20px;
+    text-align: center;
+    font-size: larger;
+    padding: 5px;
+    margin-left: 15px;
+}
+
+.infoAreaInput{
+    /* background-color: aqua; */
+    pointer-events: none;
+
+}
+
+
+/* &&&&&&&&&&&&&&&&& right div &&&&&&&&&&&&&&&&& */
+.rightDiv{
+    /* border: 2px solid black; */
+    padding: 1rem;
+    height: 40%;
+    min-width: 400px;
+    position: relative;
+    top: -50px;
+    display: flex;
+    justify-content: center;
+}
+
+.grid{
+    /* border: 3px solid green; */
+    border-radius: 15px;
+    background-color: bisque;
+    box-shadow:  2px 2px 20px grey, -2px -2px 20px grey;
+    padding: 1rem;
+    min-width: 40vmin;
+    min-height: 40vmin;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;    
+}
+
+.childs{
+    /* background-color: lightblue; */
+    border-bottom: 3px solid #970747;
+    border-right: 3px solid #970747;
+    border-radius: 15px;
+    background-color: #e6a400;
+    font-size: 200%;
+    min-width: 5vmin;
+    min-height: 5vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.childs:hover{
+    box-shadow: 5px 5px 15px black, -2px -2px 12px black;
+    transition: 250ms linear; 
+}
+
+.childs_afterWin{
+    background-color: white;
+}
+
+/* ****************************************************CSS FOR POP - UPs **************************************************** */
+
+
+/* Welcome to Tic Tac Toe pop up */
+.startDivPopUp{
+    font-family: 'Bradley Hand', cursive;
+    border: 2px solid black;
+    background-color: white;
+    width: 60%;
+    min-height: 60vh;
+    margin: 0% 20%;
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: -50%;
+    transform: scale(0.1);
+    transition: transform 1.5s, top 1.5s;
+    z-index: 1;
+    text-align: center;
+    visibility: hidden;
+}
+
+.open-startDivPopUp{
+    visibility: visible;
+    top: 20%;
+    transform: scale(1);
+}
+
+.startDivPopUp:hover{
+    box-shadow:  2px 2px 20px grey, -2px -2px 20px grey;
+    transition: 250ms linear; 
+}
+
+
+.div-box{
+    /* border: 2px solid green; */
+    width: 100%;
+    height: 95%;
+    margin-top: 10px;
+}
+
+
+.startDiv_content{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+    font-size: 150%;
+}
+
+#select_slot, #TossBtn, #StartBtn{
+    width: 100px;
+    height: 30px;
+    font-size: large;
+    border-radius: 15px;
+    text-align: center;
+    background-color: #e6a50064;
+    border: 2px solid black;
+}
+
+#tosResult, #firstPlayer{
+    width: 40px;
+    border: 2px solid black;
+    border-radius: 20px;
+    text-align: center;
+    font-size: large;
+    padding: 5px;
+}
+/* *************end************** */
+
+
+
+/* ***************next round pop up************ */
+.popUpNextRnd{
+    font-family: 'Bradley Hand', cursive;
+    border: 2px solid black;
+    background-color: white;
+    width: 60%;
+    height: 60vh;
+    margin: 0% 20%;
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: -50%;
+    transform: scale(0.1);
+    visibility: hidden;
+    transition: transform 1s, top 1s;
+    text-align: center;
+    transition-delay: 2s;
+}
+
+.open-popUpNextRnd{
+    visibility: visible;
+    top: 20%;
+    transform: scale(1);
+
+}
+
+.popUpNextRnd:hover{
+    box-shadow:  2px 2px 20px grey, -2px -2px 20px grey;
+    transition: 250ms linear; 
+}
+
+#NextBtn, #NewBtn{
+    margin-top: 20%;
+    width: 150px;
+    height: 35px;
+    font-size: large;
+    border-radius: 15px;
+    text-align: center;
+    background-color: #e6a50064;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+#NextBtn:hover, #NewBtn:hover{
+    box-shadow: 5px 5px 30px black;
+    transition: 250ms linear; 
+}
+/* ****************end********************* */
+
+/* %%%%%%%%%%% start new game pop up ******************/
+.popUpNewGame{
+    font-family: 'Bradley Hand', cursive;
+    border: 2px solid black;
+    background-color: white;
+    width: 60%;
+    height: 60vh;
+    margin: 0% 20%;
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: -50%;
+    transform: scale(0.1);
+    visibility: hidden;
+    transition: transform 1s, top 1s;
+    text-align: center;
+    /* transition-delay: 2.5s; */
+}
+
+.open-popUpNewGame{
+    visibility: visible;
+    top: 20%;
+    transform: scale(1);
+}
+
+.popUpNewGame:hover{
+    box-shadow:  2px 2px 20px grey, -2px -2px 20px grey;
+    transition: 250ms linear; 
+}
+
+#finalResultHead{
+    font-size: 220%;
+}
+/* *************end************************* */
+
+
+
+
